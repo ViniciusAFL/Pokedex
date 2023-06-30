@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/global.css">
+    <link rel="stylesheet" href="src/css/card.css">
+    <link rel="stylesheet" href="src/css/list.css">
 </head>
 <body>
     <div class="pokedex">
@@ -13,7 +15,7 @@
         <div class="pokemon-cards">
 
                 <!-- Card principal de pokemon -->
-                <div class="pokemon-card">
+                <div class="pokemon-card eletric-type" id="pikachu-card">
                     <div class="card-top">
                         <div class="details">
                             <h2 class="name">Pikachu</h2>
@@ -55,7 +57,7 @@
 
 
                 <!-- bulbasaur -->
-                <div class="pokemon-card">
+                <div class="pokemon-card grass-type" id="bulbassaur-card">
                     <div class="card-top">
                         <div class="details">
                             <h2 class="name">Bulbasaur</h2>
@@ -98,7 +100,7 @@
 
                 
                 <!-- Charmander -->
-                <div class="pokemon-card">
+                <div class="pokemon-card fire-type" id="charmander-card">
                     <div class="card-top">
                         <div class="details">
                             <h2 class="name">Charmander</h2>
@@ -139,7 +141,7 @@
                 </div>
 
                 <!-- Squirtle -->
-                <div class="pokemon-card">
+                <div class="pokemon-card water-type" id="squirtle-card">
                     <div class="card-top">
                         <div class="details">
                             <h2 class="name">Squirtle</h2>
@@ -180,7 +182,7 @@
                 </div>
 
                 <!-- Gengar -->
-                <div class="pokemon-card">
+                <div class="pokemon-card ghost-type" id="gengar-card">
                     <div class="card-top">
                         <div class="details">
                             <h2 class="name">Gengar</h2>
@@ -221,7 +223,7 @@
                 </div>
 
                 <!-- Dragonite -->
-                <div class="pokemon-card">
+                <div class="pokemon-card dragon-type open" id="dragonite-card">
                     <div class="card-top">
                         <div class="details">
                             <h2 class="name">Dragonite</h2>
@@ -263,9 +265,9 @@
 
         </div>
 
-        <nav class="listagem">
+        <nav class="listagem ativo">
             <ul>
-                <li class="pokemon ativo" id="pikachu">
+                <li class="pokemon" id="pikachu">
                     <img src="src/images/cabeca-pikachu.png" alt="">
                     <span>Pikachu</span>
                 </li>
@@ -290,7 +292,7 @@
                     <span>Gengar</span>
                 </li>
                 
-                <li class="pokemon" id="dragonite">
+                <li class="pokemon ativo" id="dragonite">
                     <img src="src/images/cabeca-dragonite.png" alt="">
                     <span>Dragonite</span>
                 </li>
@@ -300,4 +302,5 @@
 
     </div>
 </body>
+<script src="src/js/script.js"></script>
 </html>
